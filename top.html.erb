@@ -1,0 +1,15 @@
+<h1>test</h1>
+<p>トマトとチーズのスキレット焼き</p>
+<%= image_tag 'tomato.jpeg', class: "image" %>
+<table>
+    <tr>
+        <th>材料</th>
+        <th>分量</th>
+    </tr>
+<% @recipes.each do |recipe| %>
+    <tr>
+        <td><%= recipe.ingredient %></td>
+        <td><%= recipe.amount %></td>
+    </tr>
+<% end %>
+</table>
